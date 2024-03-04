@@ -1,84 +1,107 @@
-*{
-    margin:  0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-header{
-    background-color: #5f27cd;
+header {
     padding: 16px 0;
-    color: white;
+    color: #4d2600;
     display: flex;
-    border-bottom: 16px solid #341f97;
-    justify-content: center;
-    text-transform: uppercase;
-    font-style: italic;
+    border-bottom: 16px solid #8c6239;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    margin-left: 50px;
+    font-weight: 400;
 }
 
 header button {
     margin-left: 16px;
-
-}
-
-form{
-    background-color: #c8d6e5;
-    padding: 24px 0;
-    text-align: center;
-    display: none;
-}
-
-form h2{
-    margin-bottom: 16px;
-}
-
-input, button{
-    padding: 8px;
-}
-
-button{
-    background-color: green;
+    background-color: #8c6239;
     border: none;
+    padding: 8px 16px;
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
-    color: white;
+    color: #f0f0f0;
+    border-radius: 4px;
+    margin-right: 70px;
 }
 
-#botao-cancelar{
-    background-color: red;
+form {
+    background-color: #f0eae1;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+    margin: 16px auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input,
+button {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #4d2600;
+    color: #f0f0f0;
+}
+
+#botao-cancelar {
+    background-color: #944a1b;
+    color: #f0f0f0;
 }
 
 ul {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
 }
 
-ul li{
+ul li {
     max-width: 25%;
     list-style: none;
     position: relative;
     max-height: 280px;
-    overflow-y:hidden;
+    overflow-y: hidden;
+    margin: 8px;
+    border-radius: 8px;
 }
 
-ul li img{
+ul li img {
     width: 100%;
+    border-radius: 8px;
 }
 
-.overlay-imagem-link{
+.overlay-imagem-link {
     padding: 16px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     opacity: 0;
     transition: all ease .5s;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
-.overlay-imagem-link a{
-    color: white;
+.overlay-imagem-link a {
+    color: #f0f0f0;
     text-decoration: none;
 }
 
